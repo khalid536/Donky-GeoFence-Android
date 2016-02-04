@@ -40,7 +40,7 @@ To install please use one of the following methods:
 
 Cloning the Git Repo:
 
-git clone git@github.com:Donky-Network/Donky-GeoFence-Android.git 
+		git clone git@github.com:Donky-Network/Donky-GeoFence-Android.git 
 
 ## Source
 
