@@ -44,7 +44,7 @@ git clone git@github.com:Donky-Network/Donky-GeoFence-Android.git
 
 ## Source
 
-You can find the source code of Donky Core in [*Donky/sequencing*](https://github.com/Donky-Network/Donky-GeoFence-Android/tree/master/src/Donky/geofence) Android Studio project.
+You can find the source code of Donky Core in [*Donky/geofence*](https://github.com/Donky-Network/Donky-GeoFence-Android/tree/master/src/Donky/geofence) Android Studio project.
 You can use 'File->New->Import Module' option to easily include the source code to your project.
 
 In order to use this module, you must get dependencies from the Android Modular Repo on Github: [Core](https://github.com/Donky-Network/DonkySDK-Android-Modular/tree/master/src/Donky/core) and [Location](https://github.com/Donky-Network/DonkySDK-Android-Modular/tree/master/src/Donky/location)
