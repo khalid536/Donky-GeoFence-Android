@@ -4,7 +4,7 @@
 
 # Donky GeoFence SDK (Beta 1)
 
-The Donky iOS Geofencing Module allows you to add monitoring of up to 10,000 radial geo-fences to your app. It must be used in conjunction with the Donky Modular SDK to allow it to track location, and send messages to users. For detailed documentation, tutorials and guides, visit our [online documentation](http://docs.mobiledonky.com/docs/start-here).
+The Donky iOS Geofencing Module allows you to add monitoring of up to 10,000 radial geo-fences to your app. It must be used in conjunction with the Donky Modular SDK to allow it to track location, and send messages to users. For detailed documentation, tutorials and guides, visit our [online documentation](http://docs.mobiledonky.com/docs/set-up-guide).
 
 While we will not stop you from using it in your production apps, the SDK's public beta status should be taken into account. 
 
@@ -51,7 +51,7 @@ In order to use this module, you must get dependencies from the Android Modular 
 
 ## Usage
 
-To read more about how to get started please see [here](http://docs.mobiledonky.com/docs/start-here) and for details how to use this module [here](http://docs.mobiledonky.com/docs/start-here).
+To read more about how to get started please see [here](http://docs.mobiledonky.com/docs/set-up-guide) and for details how to use this module [here](http://docs.mobiledonky.com/docs/android-geofencing).
 
 Initialise this module before initailising Donky Core in onCreate method of your application class.
 
