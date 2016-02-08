@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="LoggingEnabled">true</string>
+    <string name="ErrorLogsEnabled">true</string>
+    <string name="WarningLogsEnabled">true</string>
+    <string name="InfoLogsEnabled">true</string>
+    <string name="DebugLogsEnabled">true</string>
+    <string name="SensitiveLogsEnabled">true</string>
+
+    <integer name="MinimalTimeBetweenSubmittingLogsSeconds">30</integer>
+
+    <string name="NewDeviceNotificationEnabled">true</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="enable_mock_location">Enable Mock Location</string>
+    <string name="accuracy">Accuracy:</string>
+    <string name="show_monitoring_geofence">Show Monitoring GeoFences</string>
+    <string name="control_region">Control Region</string>
+    <string name="start_monitoring_geo_fences">Start Monitoring GeoFences</string>
+    <string name="start_monitoring_location">Start Monitoring Locations</string>
+    <string name="stop_monitoring_geo_fences">Stop Monitoring GeoFences</string>
+    <string name="stop_monitoring_location">Stop Monitoring Location</string>
+
+    <string name="interval">Interval</string>
+    <string name="ExpirationDuration">Expiration Duration</string>
+    <string name="ExpirationTime">Expiration Time</string>
+    <string name="NumUpdates">Num Updates</string>
+    <string name="Priority">Priority</string>
+    <string name="SmallestDisplacement">Smallest Displacement</string>
+    <string name="FastestInterval">Fastest Interval</string>
+    <string name="MaxWaitTime">Max Wait Time</string>
+    <string name="create_custom_location_update">Create Custom Location Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+    <string name="geofences">GeoFences</string>
+    <string name="triggers">Triggers</string>
+
+
+</resources>

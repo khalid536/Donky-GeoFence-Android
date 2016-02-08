@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'maven'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        applicationId "net.donky"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v13:23.1.1'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3.1'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3.1'
+    compile project(':geofence')
+
+    compile 'net.donky:donky-module-push:2.3.0.0'
+    compile 'net.donky:donky-module-location:2.3.0.0'
+    compile 'net.donky:donky-module-rich-ui-inbox:2.3.0.0'
+    compile 'net.donky:donky-module-analytics:2.3.0.0'
+
+    compile 'com.android.support:design:23.1.1'
+}

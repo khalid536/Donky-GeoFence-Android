@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="net.donky.location.geofence">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application android:allowBackup="true">
+
+        <receiver
+            android:name="net.donky.location.geofence.internal.TransitionsBroadcastReceiver"
+            android:exported="false">
+        </receiver>
+
+        <receiver
+            android:name="net.donky.location.geofence.internal.AlarmBroadcast"
+            android:exported="false" >
+        </receiver>
+
+        <service android:name="net.donky.location.geofence.internal.GeofenceTransitionsIntentService"
+            android:exported="false"/>
+
+        <service android:name="net.donky.location.geofence.internal.GeoFencingIntentService"
+            android:exported="false"/>
+
+        <provider
+            android:name=".analytics.GeoContentProvider"
+            android:authorities="${applicationId}.donky.geoservice.provider" >
+        </provider>
+
+        <provider
+            android:name=".database.GeoFenceContentProvider"
+            android:authorities="${applicationId}.donky.geofence.provider">
+        </provider>
+
+    </application>
+
+</manifest>

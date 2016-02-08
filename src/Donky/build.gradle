@@ -1,0 +1,35 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.5.0'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven {
+            url 'http://clojars.org/repo'
+        }
+    }
+}
+
+// ext is a gradle closure allowing the declaration of global properties
+ext {
+    PUBLISH_GROUP_ID = 'net.donky'
+    MOBILE_DONKY_URL = 'http://www.mobiledonky.com/'
+    SDK_VERSION = '2.3.0.0'
+}
+
+// Running 'gradle wrapper' will generate gradlew
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.10'
+}

@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/default_padding">
+
+            <TextView
+                android:id="@+id/txv_monitoring_geo_fences"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/start_monitoring_geo_fences"/>
+
+            <Switch
+                android:id="@+id/switch_monitoring_state_geo_fences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/default_padding">
+
+            <TextView
+                android:id="@+id/txv_monitoring_location"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/start_monitoring_location"/>
+
+            <Switch
+                android:id="@+id/switch_monitoring_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/location_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:padding="@dimen/default_padding"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Lat: "
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_lat"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                tools:text="23,34"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Lng: "
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_lng"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                tools:text="23,34"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/location_type"
+            android:text="Default Location Update"
+            android:checked="true"
+            android:layout_marginTop="@dimen/half_default_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/geofence_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/sliding_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/AppTabTheme"
+            app:tabMode="fixed" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
